@@ -1,0 +1,23 @@
+{
+  "database": "data/applications.sqlite",
+  "artifact_dir": "artifacts",
+  "profile": "profile.json",
+  "resume": "resume.pdf",
+  "filters": {
+    "titles": ["machine learning", "applied ml", "recommender", "ai/ml", "software engineer"],
+    "employment_types": ["full-time"],
+    "start_on_or_after": "2027-01-01",
+    "exclude_keywords": ["unpaid", "commission only"]
+  },
+  "real_sites": {
+    "mode": "dry_run",
+    "submission_enabled": false,
+    "allowlisted_hosts": [],
+    "require_verified_review": true
+  },
+  "model": {
+    "baseline": "mlx-community/Qwen3.5-9B-4bit",
+    "adapter": "artifacts/adapters/qwen35-job-agent",
+    "optional_inference_model": "mlx-community/Qwen3.8-27B-4bit"
+  }
+}

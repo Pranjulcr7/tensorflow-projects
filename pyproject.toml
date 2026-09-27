@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "overnight-job-agent"
+version = "0.1.0"
+description = "A local-first, safety-bounded job application agent research prototype"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "playwright>=1.48,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.8"]
+mlx = ["mlx-lm>=0.29; platform_system == 'Darwin' and platform_machine == 'arm64'"]
+
+[project.scripts]
+overnight-agent = "overnight_agent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/overnight_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+

@@ -1,0 +1,1 @@
+{"messages":[{"role":"system","content":"Use only sourced candidate facts and disclose uncertainty."},{"role":"user","content":"What is the candidate's work authorization? The profile leaves it blank."},{"role":"assistant","content":"BLOCKED_MISSING_FACT"}],"metadata":{"sources":["synthetic candidate fixture:work_authorization"],"task":"unknown_fact"}}

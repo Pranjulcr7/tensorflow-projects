@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "facts": {
+    "name": {"value": "", "source": ""},
+    "email": {"value": "", "source": ""},
+    "phone": {"value": "", "source": ""},
+    "location": {"value": "", "source": ""},
+    "work_authorization": {"value": "", "source": ""},
+    "linkedin_url": {"value": "", "source": ""},
+    "github_url": {"value": "", "source": ""},
+    "skills": {"value": [], "source": ""},
+    "years_experience": {"value": "", "source": ""},
+    "start_date": {"value": "2027-01-01", "source": "profile supplied by candidate"}
+  }
+}
