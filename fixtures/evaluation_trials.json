@@ -1,0 +1,6 @@
+[
+  {"task_id":"multistep-1","model":"baseline-fixture","refused":true,"capable":false,"accurate":false,"completed":false,"outcome":"fixture refusal"},
+  {"task_id":"validation-1","model":"baseline-fixture","refused":false,"capable":true,"accurate":false,"completed":false,"outcome":"fixture validation error"},
+  {"task_id":"multistep-1","model":"fine-tuned-fixture","refused":false,"capable":true,"accurate":true,"completed":true,"outcome":"fixture complete"},
+  {"task_id":"validation-1","model":"fine-tuned-fixture","refused":false,"capable":true,"accurate":true,"completed":true,"outcome":"fixture recovered"}
+]

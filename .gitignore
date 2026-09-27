@@ -1,1 +1,13 @@
 .ipynb_checkpoints*
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+data/
+artifacts/
+models/
+*.sqlite*
+.env
+profile.json
+resume.pdf
